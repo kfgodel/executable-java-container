@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ar.com.kfgodel</groupId>
-  <artifactId>excutable-container</artifactId>
+  <artifactId>executable-container</artifactId>
   <version>0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -48,7 +48,7 @@
                 <descriptors>
                     <descriptor>src/assembly/descriptor.xml</descriptor>
                 </descriptors>
-                <finalName>${artifactId}</finalName>
+                <finalName>${project.artifactId}</finalName>
                 <outputDirectory>target</outputDirectory>
             </configuration>
         </plugin>
@@ -82,6 +82,19 @@
       <url>http://kfgodel.info:8081/nexus/content/groups/public/</url>
     </pluginRepository>
   </pluginRepositories>
-  
+
+
+    <distributionManagement>
+        <repository>
+            <id>kfgodel_mosquito</id>
+            <name>Internal Releases</name>
+            <url>http://kfgodel.info:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>kfgodel_mosquito</id>
+            <name>Internal Snapshots</name>
+            <url>http://kfgodel.info:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
