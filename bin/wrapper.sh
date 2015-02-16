@@ -22,7 +22,7 @@
 #             any changes to this file.  Failure to do so could remove the
 #             script's ability to control the application.
 
-# Application
+# Application @app.name@ and @app.long.name@
 APP_NAME="EXECUTABLE_CONTAINER"
 APP_LONG_NAME="Executable java container"
 
