@@ -1,0 +1,2 @@
+This folder stores the wrapper configuration used by the binary executable in bin/ to start your app and the JVM
+Check http://wrapper.tanukisoftware.com/doc/english/properties.html for configuration properties and their description
