@@ -49,6 +49,7 @@
                     <descriptor>src/assembly/descriptor.xml</descriptor>
                 </descriptors>
                 <finalName>${project.artifactId}</finalName>
+                <appendAssemblyId>false</appendAssemblyId>
                 <outputDirectory>target</outputDirectory>
             </configuration>
         </plugin>
