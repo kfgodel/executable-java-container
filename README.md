@@ -33,3 +33,26 @@ Very much like tomcat, to use it as a container you need to:
 3. replace the example app with yours
 4. run the script file according to your platform (i.e. linux bin/wrapper.sh)
 
+[Check the tutorial for more details](https://github.com/kfgodel/executable-java-container/wiki/Using-executable-java-container-as-a-standalone-container)
+  
+  
+### Maven dependency
+When using it as a dependency instead of building a war, or jar, we will build a zip file that contains everything need to run your code in different platforms.
+In order to do that you need to configure your project pom to include the dependency, but also to modify how the final artifact is done.  
+Without going into much detail the steps needed are:  
+
+1. Include this project as a dependency
+2. Ensure that your project generates an executable uber-jar
+3. Replace the example app that comes in this container with your jar
+4. Pack everything in a zip file that containes this container with your app
+5. Distribute as neede ;-)
+
+There's a tutorial on the wiki page that guides you through the process for these steps.  
+And you can also [check an example project here](https://github.com/kfgodel/executable-java)
+[Check the tutorial for more details](https://github.com/kfgodel/executable-java-container/wiki/Using-executable-java-container-as-a-maven-dependency)
+
+
+## Contact
+You can contact me for any problems or suggestion in the setup at dario.garcia at 10pines.com  
+(but please make the effort of figuring it out first) 
+
