@@ -1,7 +1,8 @@
 # executable-java-container
 
-Simple binary executable container for java applications. Allowing to run them as standard applications or services
-in many platforms.
+Simple binary executable **container for java applications**. Allows you to run your java code as a service or a console program
+in **windows, linux, mac, etc**.
+
 
 ### Disclaimer
 This project is a mavenized bundle of a simple configuration of the great and powerful Tanuki's wrapper (community edition).
@@ -14,18 +15,19 @@ While the Java VM does a great job at abstracting the execution model, in order 
 or simple console commands you need to fill the gap between the VM executable and the platform details.  
 
 That's where Tanuki's wrapper comes in and works as a JVM wrapper that can be executed as a native application with your code.
-It still needs the JVM to run, but it abstracts you from the details of figuring that out.
+It still needs the JVM to run, but it abstracts you from the details of finding, executing, and restarting it.
 
 This project builds **on top of tanuki's wrapper** to simplify its configuration and convert it to maven, so
-you can use it as a dependency to build **your own portable application** that can be executed in **windows,
-linux, mac, etc** without any extra code.
+you can use it as a dependency to build **your own portable application** that can be executed in *windows,
+linux, mac, etc* without any extra code.
 
 ## Usage
-There are two options to use this executable container: as a app container (like tomcat), or as a maven dependency
-to build you own executable.
+There are two options to use this project: as an app container (similar to tomcat without the web part), or as a maven dependency
+that wraps your code into an executable package.
 
 ### Standalone container
-Very much like tomcat, to use it as a container you need to:
+Very much like tomcat, to use it as a container you need to:  
+
 1. download the latest release zip
 2. unzip it in your computer
 3. replace the example app with yours
