@@ -32,7 +32,7 @@ Very much like tomcat, to use it as a container you need to:
 1. download the [latest release zip](https://github.com/kfgodel/executable-java-container/releases)
 2. unzip it in your computer
 3. replace the example app with yours
-4. run the script file for your platform in the bin folder (for linux is bin/wrapper.sh)
+4. run it using the script for your platform in the bin folder (for linux is bin/wrapper.sh)
 
 [Check the tutorial for more details](https://github.com/kfgodel/executable-java-container/wiki/Using-executable-java-container-as-a-standalone-container)
   
