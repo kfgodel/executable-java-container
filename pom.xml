@@ -3,6 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>ar.com.kfgodel</groupId>
+    <artifactId>java-pom</artifactId>
+    <version>0.1-SNAPSHOT</version>
+  </parent>
+
   <groupId>ar.com.kfgodel</groupId>
   <artifactId>executable-container</artifactId>
   <version>0.2-SNAPSHOT</version>
@@ -10,25 +16,26 @@
 
   <name>ExecutableContainer</name>
   <description>Simplified binary executable container to run java programs in different platforms</description>
-  
-  
+
   <scm>
-	<connection>scm:git:ssh://github.com/kfgodel/executable-java-container.git</connection>
-	<developerConnection>scm:git:ssh://github.com/kfgodel/executable-java-container.git</developerConnection>
-	<url>https://github.com/kfgodel/executable-java-container</url>
+    <connection>scm:git:ssh://github.com/kfgodel/executable-java-container.git</connection>
+    <developerConnection>scm:git:ssh://github.com/kfgodel/executable-java-container.git</developerConnection>
+    <url>https://github.com/kfgodel/executable-java-container</url>
   </scm>
-  
+
+  <repositories>
+    <repository>
+      <id>kfgodel_mosquito</id>
+      <name>Repo Mosquito</name>
+      <url>http://kfgodel.info:8081/nexus/content/groups/public/</url>
+    </repository>
+  </repositories>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    
     <version.plugin.assembly>2.5.3</version.plugin.assembly>
   </properties>
 
-  
   <build>
-      
-      
     <plugins>
 	
       <!-- Empaqueta en un zip -->
@@ -56,46 +63,5 @@
 	  
     </plugins>
   </build>
-  
-  <repositories>
-    <repository>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-      <id>kfgodel_mosquito</id>
-      <name>Repo Mosquito</name>
-      <url>http://kfgodel.info:8081/nexus/content/groups/public/</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-      <id>kfgodel_mosquito</id>
-      <name>Repo Mosquito</name>
-      <url>http://kfgodel.info:8081/nexus/content/groups/public/</url>
-    </pluginRepository>
-  </pluginRepositories>
-
-
-    <distributionManagement>
-        <repository>
-            <id>kfgodel_mosquito</id>
-            <name>Internal Releases</name>
-            <url>http://kfgodel.info:8081/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>kfgodel_mosquito</id>
-            <name>Internal Snapshots</name>
-            <url>http://kfgodel.info:8081/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
 
 </project>
