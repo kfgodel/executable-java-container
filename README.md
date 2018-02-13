@@ -50,7 +50,7 @@ Without going into much detail your pom will include these steps:
 4. Pack everything in a zip file that containes this container with your custom app
 5. Distribute as needed ;-)
 
-[Check the tutorial for more details](https://github.com/kfgodel/executable-java-container/wiki/Using-executable-java-container-as-a-maven-dependency).  
+[Check the tutorial for more details](https://github.com/kfgodel/executable-java-container/wiki/Using-executable-java-container-as-a-standalone-container).  
 You can also see [a working example project here](https://github.com/kfgodel/executable-java)
 
 
