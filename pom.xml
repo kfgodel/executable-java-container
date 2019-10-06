@@ -16,11 +16,12 @@
 
   <name>ExecutableContainer</name>
   <description>Simplified binary executable container to run java programs in different platforms</description>
+  <url>https://github.com/kfgodel/executable-java-container</url>
 
   <scm>
-    <connection>scm:git:ssh://github.com/kfgodel/executable-java-container.git</connection>
     <developerConnection>scm:git:ssh://github.com/kfgodel/executable-java-container.git</developerConnection>
-    <url>https://github.com/kfgodel/executable-java-container</url>
+    <connection>${project.scm.developerConnection}</connection>
+    <url>${project.url}</url>
   </scm>
 
   <repositories>
@@ -32,6 +33,9 @@
   </repositories>
 
   <properties>
+    <!-- Sonar properties to prevent unintentional id changes (Reference: https://docs.sonarqube.org/latest/analysis/analysis-parameters/) -->
+    <sonar.projectKey>ar.com.kfgodel:executable-container:master</sonar.projectKey>
+
     <version.plugin.assembly>2.5.3</version.plugin.assembly>
   </properties>
 
