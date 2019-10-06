@@ -34,7 +34,7 @@
 
   <properties>
     <!-- Sonar properties to prevent unintentional id changes (Reference: https://docs.sonarqube.org/latest/analysis/analysis-parameters/) -->
-    <sonar.projectKey>ar.com.kfgodel:executable-container:master</sonar.projectKey>
+    <sonar.projectKey>ar.com.kfgodel:executable-container</sonar.projectKey>
 
     <version.plugin.assembly>2.5.3</version.plugin.assembly>
   </properties>
